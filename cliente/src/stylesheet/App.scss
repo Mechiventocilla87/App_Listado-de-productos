@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+
+@font-face {
+    font-family: 'Titillium Web', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600')
+};
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Roboto:400,500,700')
+};
+
+@mixin  style_box_product{
+    background-color: #FFFFFF;
+    width: 65%;
+    display: flex;
+    border-radius: 3px;
+}
+
+//-----nav---
+nav{
+    background-color: #BC3B6A;
+    height: 40px;
+    .cabecera{
+        width: 65%;
+        margin: auto;
+        line-height: 35px;
+        display: flex;
+        padding-top: 6px;
+        figure{
+            margin: 0px;
+            .logo{
+                width: 25px;
+                height: 28px;
+                margin-right: 15px;
+            }
+        }                
+    }
+}
+
+
+nav{
+    .cabecera{
+        input{
+            width: 92%;
+            border-radius: 2px 0px 0px 2px;
+            border: none;
+            height: 25px;
+            padding-left: 6px;
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 400;
+        }
+        .search{
+            background-color: #EEEEEE;
+            border: none;
+            border-radius: 0px 2px 2px 0px;
+            height: 27px;
+            width: 28px;
+            .icon_search{
+                width: 13px;
+                height: 13px;
+            }
+        }
+    }
+}
+
+
+//------home
+div{
+  .text_home{
+     font-family: 'Titillium Web', sans-serif;
+     font-weight: 300;
+     font-size: 24px;
+     color: #7c7c7c;
+     text-align: center;
+  }
+
+}
+
+
+
+//----listproducts
+
+.box_container{
+        background-color: #EEEEEE;
+        padding-bottom: 20px;
+    .link_box{
+            text-decoration: none;
+        .box_products{
+            justify-content: space-between;
+            height: 127px;
+            margin: auto;
+            margin-bottom: 3px;
+            @include style_box_product();
+            .img_container{
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img_product{
+                    width: 86%;
+                    border-radius: 7px;
+                    height: 102px;
+                }
+            }
+            .info_product{
+                width: 65%;
+                
+                
+            }
+            .info_location{
+                width: 20%;
+                p{
+                  font-family: 'Titillium Web', sans-serif;
+                  font-weight: 400;
+                  font-size: 10px;
+                  color: #3E3E3E;
+                  text-align: center;
+                  margin-top: 30px;
+    
+                }
+            }
+        }
+    }    
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: flex;
+    width: 13px;
+    height: 13px;
+    margin-left: 9px;
+    margin-top: 2px;
+}
+
+.box_products{
+    .info_product{
+        
+        .info_price{
+            display: flex;
+            width: 35%;
+            font-family: 'Roboto', sans-serif;
+            color: #3E3E3E;
+            font-weight: 500;
+            font-size: 16px;
+            margin-top: 22px;
+            margin-left: 5px;
+            .pesos{
+             font-family: Arial, Helvetica, sans-serif;
+             margin-right: 5px;
+             font-size: 17.1px;
+            }
+            .decimales_precio{
+                font-size: 11px;
+            }
+        }
+        .info_text{
+            width: 45%;
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 400;
+            color: #3E3E3E;
+            font-size: 14px;
+            margin-left: 5px;
+
+        }
+            
+    }
+}
+
+
+//----Breadcrumbs
+.breadcrumbs_container{
+    background-color: #EEEEEE;
+    height: 40px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: #3E3E3E;
+    font-size: 11px;
+    font-weight: 400;
+    margin: auto;
+    line-height:  40px;
+    .box_breadcrumbs{
+        margin: auto;
+        width: 65%; 
+      .li_breadcrumb{
+          list-style: none;
+          display: inline-block;
+            .span_breadcrumb{
+                margin-right: 4px;
+            }
+            .separate{
+                margin-right: 5px;
+                font-family: 'Titillium Web', sans-serif;
+            }
+       } 
+      
+    }
+}
+
+//------ProductDetail
+.box_container_detalle{
+    background-color: #EEEEEE;
+    padding-bottom: 20px;
+    .box_product_detalle{
+        margin: auto;
+        @include style_box_product();
+        .colum_izq{
+            width: 70%;
+            .img_container_box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:12px;
+                .image{
+                    width: 86%;
+                    border-radius: 7px;
+                    height: 502px;
+                }
+            }
+        }
+        .colum_der{
+            width: 30%;
+        }
+    }
+}
+
+.colum_izq{
+   .description{
+       padding-top: 20px;
+       width: 90%;
+       margin: auto;
+       h3{
+        font-family: 'Roboto', sans-serif;
+        color: #3E3E3E;
+        font-weight: 500;
+       }
+       p{
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #575757;
+        text-align: justify;
+       }
+   }
+}
+
+.box_product_detalle{
+    .colum_der{
+        width: 30%;
+        .condition{
+        font-family: 'Titillium Web', sans-serif;
+        color: #3E3E3E;
+        font-weight: 500;
+        font-size: 10px;
+        margin-top: 20px;
+        }
+        .title_product{
+        font-family: 'Roboto', sans-serif;
+        color: #3E3E3E;
+        font-weight: 500;
+        font-size: 15px;
+        }
+        .price{
+            display: flex;
+            width: 35%;
+            font-family: 'Roboto', sans-serif;
+            color: #3E3E3E;
+            font-weight: 500;
+            font-size: 28px;
+            margin-top: 26px;
+            margin-left: 5px;
+            margin-bottom: 21px;
+            .pesos{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-right: 5px;
+                font-size: 28px;
+                margin-top: 2px;
+
+            }            
+            .decimales_precio{
+                font-size: 15px;
+                margin-top: 4px;
+            }
+        }
+        button{
+            background-color: #3383F9;
+            border: none;
+            width: 90%;
+            border-radius: 3px;
+            height: 36px;
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+    }
+}
