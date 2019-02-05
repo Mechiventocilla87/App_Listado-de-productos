@@ -71,8 +71,8 @@ class ProductDetail extends Component {
               </div>
               <div className="price">
                   <span className="pesos">{this.state.productoConId.price.currency === 'ARS' && "$"}</span>
-                  <span>{this.state.productoConId.price.amount}</span> 
-                  <span className="decimales_precio">{this.state.productoConId.price.decimals}</span>
+                  <span>{this.state.productoConId.price.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</span> 
+                  <span className="decimales_precio">{this.state.productoConId.price.decimals.padEnd(2, 0)}</span>
               </div>
               <button>Comprar</button>               
              </div>

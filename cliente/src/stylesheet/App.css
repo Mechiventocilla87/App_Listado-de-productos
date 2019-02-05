@@ -193,6 +193,7 @@ div .text_home {
 }
 .box_container_detalle .box_product_detalle .colum_der {
   width: 30%;
+  padding: 0px 10px;
 }
 
 .colum_izq .description {
@@ -213,9 +214,6 @@ div .text_home {
   text-align: justify;
 }
 
-.box_product_detalle .colum_der {
-  width: 30%;
-}
 .box_product_detalle .colum_der .condition {
   font-family: "Titillium Web", sans-serif;
   color: #3E3E3E;

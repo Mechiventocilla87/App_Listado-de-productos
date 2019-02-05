@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './stylesheet/App.css';
 import { BrowserRouter, Route} from "react-router-dom"
-import Search from './Search';
-import Home from './Home';
-import Listproducts from './Listproducts';
-import ProductDetail from './ProductDetail';
+import Search from './Search'
+import Home from './Home'
+import Listproducts from './Listproducts'
+import ProductDetail from './ProductDetail'
 
 
 class App extends Component {

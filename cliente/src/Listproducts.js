@@ -68,8 +68,8 @@ class Listproducts extends Component {
                         <div className="info_product">
                           <div className="info_price">
                             <span className="pesos">{r.price.currency === 'ARS' ? "$" : "USD"}</span>
-                            <span>{r.price.amount}</span>
-                            <span className="decimales_precio">{r.price.decimals}</span>
+                            <span>{r.price.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</span>
+                            <span className="decimales_precio">{r.price.decimals.padEnd(2, 0)}</span>
                             <img src={img_shipping} className={r.free_shipping === true ? "show" : "hidden"}/>
                           </div>
                           <div className="info_text">
